@@ -1,13 +1,10 @@
 // This function should return the BMI for a person 
 function BMICalculator(mass, height) {
-    mass1 = parseInt(mass)
-    height1 = parseInt(height)
-    if (height1>0 && mass1>0){
-        x = parseInt(mass1/(height1 * height1))
-        return x
-    }else{
+    if (mass<=0 || height<=0){
         return "INVALID INPUT"
     }
+    return mass / (height * height)
+   
     // Write your code here
 }
 
