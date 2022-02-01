@@ -19,6 +19,6 @@ function renderdata(data){
             let text = item.title;
             para.innerHTML = text;
             completed1.appendChild(para);
-        }
+        }  
     }
 }
